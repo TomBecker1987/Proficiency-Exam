@@ -8,11 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <script id="render-template" type="text/x-handlebars-template">
+        {{#each results}}
+            <div>
+                <a href="{{href}}">{{title}}</a>
+                <img src="{{thumbnail}}" alt="image of recipe">
+                <div>{{ingredients}}</div>
+            </div>
+        {{/each}}
+    </script>
+    
     
     <div id="query">
         <input type="text" placeholder="Type an ingredient..">
         <button type="button">Search</button>
     </div>
+
+    <div id="display-food"></div>
 
     <script src="handlebars/dist/handlebars.js"></script>
     <script src="jquery/dist/jquery.js"></script>
