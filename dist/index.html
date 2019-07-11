@@ -14,7 +14,9 @@
             <div>
                 <a href="{{href}}">{{title}}</a>
                 <img src="{{thumbnail}}" alt="image of recipe">
-                <div>{{ingredients}}</div>
+                {{#each ingredients}}
+                    <div>{{this}}</div>
+                {{/each}}
             </div>
         {{/each}}
     </script>
