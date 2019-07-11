@@ -1,0 +1,47 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#query {
+    background-color: bisque;
+    padding: 20px;
+}
+
+#display-food {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 15px;
+}
+
+
+.result {
+    display:grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+    padding-bottom: 20px;
+    align-items: start;
+    align-content: start;
+    border-right: 3px dotted gray;
+    border-bottom: 3px dotted gray;
+    padding-left: 15px;
+}
+
+img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+a {
+    margin:10px;
+    font-weight: 700;
+}
+
+div#ingredients {
+    padding-left: 10px;
+}
+
+div#ingredients > p {
+    text-decoration: underline;
+}

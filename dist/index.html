@@ -6,17 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <script id="render-template" type="text/x-handlebars-template">
         {{#each results}}
-            <div>
+            <div class="result">
                 <a href="{{href}}">{{title}}</a>
                 <img src="{{thumbnail}}" alt="image of recipe">
+                <div id="ingredients">
+                    <p>Ingredients:</p>
                 {{#each ingredients}}
                     <div>{{this}}</div>
                 {{/each}}
+                </div>
             </div>
         {{/each}}
     </script>
